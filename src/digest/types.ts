@@ -17,6 +17,7 @@ export type DigestRow = {
   owner: string | null; // null renders as "—"
   runs: number;
   retries: number;
+  fails: number; // count of `fail` lines
   lastStatus: RunStatus;
   lastError: string | null;
   firstAt: string; // ISO with the original offset, never converted to UTC
